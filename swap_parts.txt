@@ -1,0 +1,19 @@
+0 background
+1 face
+2 left brow
+3 right brow
+4 left eye
+5 right eye
+6 eye g
+7 left ear
+8 right ear
+9 ear r
+10 nose
+11 mouth
+12 upper lip
+13 lower lip  
+14 neck
+15 neck l
+16 cloth
+17 hair
+18 hat
