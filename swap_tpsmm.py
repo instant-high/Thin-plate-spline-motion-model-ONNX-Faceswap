@@ -43,7 +43,7 @@ kp_detector = onnxruntime.InferenceSession('tpsmm/kp_detector.onnx', sess_option
 tpsm_model = onnxruntime.InferenceSession('tpsmm/tpsmm_rel.onnx', sess_options=session_options, providers=providers)    
 
 def process_image(model, img, size, crop_scale=1.6):
-    bboxes, kpss = model.detect(img, det_thresh=0.6)
+    bboxes, kpss = model.detect(img, det_thresh=0.3)
     assert len(kpss) != 0, "No face detected"
     aimg, mat = get_cropped_head_256(img, kpss[0], size=size, scale=crop_scale)
     return aimg, mat    
